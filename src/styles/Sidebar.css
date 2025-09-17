@@ -1,0 +1,24 @@
+.sidebar {
+  width: 220px;
+  background: #222;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+.sidebar h2 {
+  margin-bottom: 30px;
+}
+.sidebar nav {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.sidebar a {
+  color: #ccc;
+  text-decoration: none;
+}
+.sidebar a.active {
+  color: white;
+  font-weight: bold;
+}

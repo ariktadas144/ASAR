@@ -1,0 +1,371 @@
+/* ===================== */
+/* Navbar Styling */
+/* ===================== */
+.dashboard-navbar {
+  width: 100%;
+  height: 64px;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 32px;
+  border-bottom: 1px solid #e5e7eb;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+/* Left side */
+.navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.navbar-logo {
+  height: 40px;
+  width: 40px;
+  object-fit: contain;
+}
+
+.navbar-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #111827;
+  white-space: nowrap;
+}
+
+/* Center nav */
+.navbar-center {
+  display: flex;
+  gap: 16px;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #111827;
+  background: transparent;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.nav-link span {
+  margin-top: 2px;
+}
+
+.nav-link:hover {
+  background-color: #f3f4f6;
+}
+
+.nav-link.active {
+  background-color: #111827;
+  color: #ffffff;
+}
+
+/* Right side */
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.emergency-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background-color: #dc2626;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  position: relative;
+}
+
+.badge {
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  background-color: #ef4444;
+  color: white;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 2px 6px;
+  border-radius: 999px;
+}
+
+.icon-btn {
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  padding: 6px;
+  cursor: pointer;
+}
+
+/* ===================== */
+/* Page Content */
+/* ===================== */
+.dashboard-content {
+  margin-top: 80px;
+  padding: 24px;
+}
+
+/* ===================== */
+/* Congestion Map Layout */
+/* ===================== */
+.congestion-map-page {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 24px;
+}
+
+/* ===================== */
+/* Traffic Map Card */
+/* ===================== */
+.traffic-map-card {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-header h3 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #111827;
+}
+
+.map-controls button {
+  margin-left: 6px;
+  padding: 6px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #111827;
+}
+
+.map-controls button:hover {
+  background: #f3f4f6;
+}
+
+.map-placeholder {
+  height: 300px;
+  background: #f3f4f6;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 12px;
+  text-align: center;
+  color: #374151;
+  font-size: 14px;
+}
+
+.map-footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 12px;
+  font-size: 12px;
+  color: #6b7280;
+}
+
+.legend {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.legend .dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.legend .dot.red {
+  background: #dc2626;
+}
+.legend .dot.black {
+  background: #111827;
+}
+.legend .dot.gray {
+  background: #d1d5db;
+}
+
+/* ===================== */
+/* Signal Section Styling */
+/* ===================== */
+.signal-section {
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 16px;
+  margin-bottom: 16px;
+  border-radius: 8px;
+}
+
+.section-title {
+  margin-bottom: 12px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+/* Signal Row */
+.signal-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.signal-street {
+  color: #000;
+  font-weight: 500;
+}
+
+/* Toggle Switch */
+.toggle {
+  width: 50px;
+  height: 24px;
+  border-radius: 12px;
+  position: relative;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.toggle.off {
+  background: #555; /* dark grey when OFF */
+}
+
+.toggle.on {
+  background: #000; /* black when ON */
+}
+
+.toggle .knob {
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  transition: left 0.3s;
+}
+
+.toggle.on .knob {
+  left: 28px; /* slides right */
+}
+
+/* ===================== */
+/* Right Panel / Metrics */
+/* ===================== */
+.right-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.traffic-zones,
+.current-metrics {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.traffic-zones h3,
+.current-metrics h3 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #111827;
+}
+
+.current-metrics p {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  margin: 6px 0;
+  color: #374151;
+}
+
+.current-metrics span {
+  font-weight: 600;
+}
+
+.current-metrics .red {
+  color: #dc2626;
+}
+
+.current-metrics .green {
+  color: #16a34a;
+}
+
+/* Traffic Zone Tags */
+.zone {
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  padding: 12px;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.zone h4 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #111827;
+}
+
+.zone p {
+  font-size: 13px;
+  color: #374151;
+  margin: 2px 0;
+}
+
+.tag {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  font-size: 10px;
+  font-weight: 600;
+  padding: 2px 6px;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
+
+.tag.heavy {
+  background: #dc2626;
+  color: #fff;
+}
+
+.tag.moderate {
+  background: #111827;
+  color: #fff;
+}
+
+.tag.light {
+  background: #d1d5db;
+  color: #111827;
+}

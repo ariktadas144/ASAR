@@ -1,0 +1,36 @@
+.landing {
+  background: url("/bg.jpg") no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.overlay {
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 40px;
+  border-radius: 10px;
+}
+.title {
+  font-size: 3rem;
+  color: white;
+}
+.subtitle {
+  font-size: 1.2rem;
+  color: #ddd;
+  margin-bottom: 20px;
+}
+.btn {
+  padding: 12px 25px;
+  font-size: 1rem;
+  border: none;
+  background: white;
+  color: black;
+  cursor: pointer;
+  border-radius: 25px;
+  transition: 0.3s;
+}
+.btn:hover {
+  background: #00d084;
+  color: white;
+}
